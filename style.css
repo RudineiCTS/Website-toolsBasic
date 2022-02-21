@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Balsamiq+Sans:wght@700&display=swap');
 body{
      /* overflow-y: hidden;  */
-    
+    background-color:#F7F7F7;
+    margin:0;
 }
 
 button{
@@ -13,6 +14,8 @@ button{
 #header-container{
     padding-top:20px;
     /* background-image: linear-gradient(to bottom, #000 transparent); */
+    background: linear-gradient(to top, transparent 10%, rgba(247, 247, 247, 0.308) 35%, rgba(247, 247, 247, 0.986));
+    
 }
 #background-image{
     position: absolute;
@@ -20,9 +23,11 @@ button{
     top: 0px;
     z-index: -1;
     width: 100%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, #000 40%);
+    /* -webkit-mask-image: linear-gradient(to bottom, transparent 5%, #000 40%); */
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, #000 20%);
 
 }
+
 #content{ 
     display: flex;
     justify-content: space-between;
@@ -50,14 +55,24 @@ button{
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    
+   
 }
 
 
 
-.content-img-presentation{
+.container-img-presentation{
     margin-left: 150px;
     padding-top:50px;
+}
+
+.content-img{
+    border: 2px solid #C7973E;
+    width: 550px;
+    height: auto;
+    border-radius:50%;
+    margin-left:-100px;
+    justify-content:center;
+    display:flex
 }
 
 #img-presentation{
@@ -80,6 +95,8 @@ button{
     font-family: 'Balsamiq Sans', cursive;
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
+    color:#D0A85C;
+    margin-bottom: 40px;
 }
 
 [data-anime]{
@@ -90,7 +107,63 @@ button{
     /* eixo x - y - y */
     transform: translate3d(0px, 100px, 0px)
 }
+[data-anime ="right"]{
+    /* eixo x - y - y */
+    transform: translate3d(-100px, 0px, 0px)
+}
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+}
+
+.container-enemy{
+    display:flex;
+    margin:50px 30px 0 30px ;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+#img-alvo{
+    max-width: 500px;
+    width:400px;
+    margin-top:10px;
+    max-height: auto;
+}
+
+.container-description-enemy{
+max-width:40%;
+padding-left: 20px;
+padding-top:0px;
+
+}
+.title-enemy{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+.icon-chevron{
+    color:#D0A85C;
+}
+
+.container-border-enemy{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-right: 100px;;
+}
+.border-enemy-img{
+    position: absolute;
+    z-index: -1;
+    max-width: 500px;
+    padding-right: 100px;
+}
+
+.container-chevron-left{
+    margin:0px -70px 0px 0px;
+
+}
+.container-chevron-right{
+    margin:0px 0px 0px -70px;
 }

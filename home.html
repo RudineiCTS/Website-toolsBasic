@@ -24,20 +24,53 @@
         </div>
         <!-- <img src="./thumb-1920-842583.jpg" alt="assassins creed origins" id="img-lading">  -->
     </header>
-    <main class="container-content">
 
-        <div class="content-img-presentation" data-anime="bottom">
-            <img src="./ACO-Bayek.png" id="img-presentation">
+    <section class="container-content">
+
+        <div class="container-img-presentation" data-anime="bottom">
+            <div class="content-img">
+                <img src="./ACO-Bayek.png" id="img-presentation">
+            </div>
         </div>
 
         <div class="content-text-presentation" data-anime="bottom">
             <h2 class="subititle-2">Bayek, de Siua</h2>
             <p class="description-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                Bayek de Siuá (c. 86 AEC - desconhecido) foi o último dos Medjai do Egito Antigo,
+                proveniente do vilarejo remoto de Siuá, e um dos primeiros membros e fundadores dos Ocultos,
+                que eventualmente evoluiriam para a Irmandade dos Assassinos, junto com sua esposa Aya.
+            </p>
+            <p class="description-2">
+                A morte do filho dele com Aya, Khemu, causada pela misteriosa Ordem dos Anciões, motivou o casal a embarcar em uma longa jornada de vingança contra eles. No processo, eles acabaram sendo membros importantes das forças que buscavam derrubar Ptolemeu XIII, um fantoche da Ordem, e restaurar Cleópatra. Bayek passou por cada região do Egito, tirando a influência da Ordem em região a região.
+            </p>
+            <p class="description-2">
+                No entanto, na conclusão da Guerra Civil Alexandrina, Cleópatra e o novo aliado dela, o general Júlio César, acabaram tornando-se outros fantoches da Ordem, e traíram Bayek, Aya e os demais outros que estavam combatendo a Ordem. Decidindo que eles deveriam trabalhar nas sombras ao invés de publicamente apoiar monarcas, Bayek e Aya se separaram e criaram, respectivamente, uma sede dos Ocultos em Mênfis e Roma.
             </p>
         </div>
+    </section>
 
-    </main>
+    <section class="container-enemy" data-anime="right">
+        <div class="container-chevron-left" name="change-enemy" onclick="handleChangeEnemy()">
+            <img src="./icone/chevron-left.svg">
+        </div>
+        
+        <div class="container-description-enemy">
+           
+            <h2 class="title-enemy">O Ibís</h2>
+            <p class="description-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem earum facilis veniam ipsa temporibus quas quasi ut sapiente qui omnis distinctio necessitatibus totam voluptatem assumenda, alias aliquam quos repellendus expedita?</p>
+        </div>
+
+        <div class="container-chevron-right">
+            <img src="./icone/chevron-right.svg" class="icon-chevron">
+        </div>
+
+        <div class="container-border-enemy">
+            <img src="./enemys/border-img.png" class="border-enemy-img" indexImg="0">
+            <img src="./enemys/ibis.png" id="img-alvo">
+        </div>
+       
+    </section>
 </body>
+<script src="script-img.js"></script>
 <script src="index.js"></script>
 </html>

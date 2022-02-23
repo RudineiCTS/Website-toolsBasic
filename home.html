@@ -51,7 +51,8 @@
 
     <section class="container-enemy" data-anime="right">
 
-        <div class="container-chevron-left" name="change-enemy" onclick="handleChangeEnemy()">
+    <!-- scopo de descrição na tela  -->
+        <div class="container-chevron-left" name="change-enemy" onclick="handleReturnChangeEnemy()">
             <img src="./icone/chevron-left.svg">
         </div>
         
@@ -61,16 +62,20 @@
             <p class="description-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem earum facilis veniam ipsa temporibus quas quasi ut sapiente qui omnis distinctio necessitatibus totam voluptatem assumenda, alias aliquam quos repellendus expedita?</p>
         </div>
 
-        <div class="container-chevron-right">
+        <div class="container-chevron-right" onclick="handleNextChangeEnemy()">
             <img src="./icone/chevron-right.svg" class="icon-chevron">
         </div>
+    <!-- fim do scopo de description -->
 
         <div class="container-border-enemy">
             <img src="./enemys/border-img.png" class="border-enemy-img">
             <img src="./enemys/ibis.png" id="img-alvo"  indexImg="0">
         </div>
-       
     </section>
+    
+    <main>
+
+    </main>
 </body>
 <script src="script-img.js"></script>
 <script src="index.js"></script>

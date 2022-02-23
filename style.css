@@ -127,9 +127,11 @@ button{
 
 
 #img-alvo{
-    max-width: 200px;
+    max-width: 300px;
     margin-top:10px;
-    max-height: auto;
+    max-height: 400px;
+    width:100%;
+    height:100%;
 }
 
 .container-description-enemy{

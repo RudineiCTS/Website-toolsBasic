@@ -1,14 +1,24 @@
 const containerImg = document.getElementById('img-alvo')
 const buttonChangeEnemy = document.getElementsByName('change-enemy');
 
-let indexImgs =0;
+let indexImgs = 0;
 const vectorImg =['./enemys/ibis.png', './enemys/Rudjek.png']
+let index= containerImg.getAttribute('indexImg');
 
-function handleChangeEnemy(){
-  let index= containerImg.getAttribute('indexImg');
-  index++;
-  console.log(index);
-  if(index !== indexImgs)
-  containerImg.setAttribute('src',vectorImg[index])
-  console.log(vectorImg[index]);
+function handleReturnChangeEnemy(){
+
+  if(indexImgs > 0 ){
+    indexImgs--;
+    containerImg.setAttribute('src',vectorImg[indexImgs])
+    console.log(vectorImg[indexImgs]);
+  }
+  
+}
+
+function handleNextChangeEnemy(){
+  if(indexImgs >= 0 && indexImgs < vectorImg.length -1){
+    indexImgs++;
+    containerImg.setAttribute('src',vectorImg[indexImgs])
+    console.log(vectorImg[index]);
+  } 
 }

@@ -14,8 +14,7 @@ button{
 #header-container{
     padding-top:20px;
     /* background-image: linear-gradient(to bottom, #000 transparent); */
-    background: linear-gradient(to top, transparent 10%, rgba(247, 247, 247, 0.308) 35%, rgba(247, 247, 247, 0.986));
-    
+   
 }
 #background-image{
     position: absolute;
@@ -27,7 +26,41 @@ button{
     -webkit-mask-image: linear-gradient(to top, transparent 5%, #000 20%);
 
 }
+#content-text-show{
+background-color: #C7973E;
+width:150px;
+height:40px;
+text-align: center;
+display: flex;
+justify-content:center;
+align-items: center;
+border-radius: 30px;
+color: #fff;
+font-family: sans-serif;
 
+}
+
+#content-game{
+    margin: 100vh 0 0 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#content-title-game{ 
+    width: 100%;
+    background-color: #D0A85C;
+    text-align: center;
+
+}
+#content-description-game{
+   
+}
+#game-title{
+
+
+}
+#game-description{
+
+}
 #content{ 
     display: flex;
     justify-content: space-between;
@@ -51,7 +84,6 @@ button{
     height: 100vh;
 }
 .container-content{
-    margin-top:100vh;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
@@ -166,4 +198,13 @@ padding-top:0px;
 }
 .container-chevron-right{
     margin:0px 0px 0px -200px;
+}
+
+#img-buildCredo{
+transition:0.01;
+
+}
+
+#img-buildCredo:hover{
+    transform: rotateZ(180deg)
 }

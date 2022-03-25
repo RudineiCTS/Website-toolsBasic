@@ -41,25 +41,30 @@ font-family: sans-serif;
 }
 
 #content-game{
-    margin: 100vh 0 0 0;
+    margin: 70vh 0 0 0;
     padding-left: 100px;
     padding-right: 100px;
 }
 #content-title-game{ 
     width: 100%;
-    background-color: #D0A85C;
+    background-color: #F0F3F4;
     text-align: center;
+    padding: 10px 20px 40px 20px;
+    border-radius: 10px;
 
 }
 #content-description-game{
    
 }
 #game-title{
-
+font-family: 'Prompt', sans-serif;
+color:#EA9F5c;
+font-size: 4rem;
 
 }
 #game-description{
-
+margin: 0px 20%;
+font-family: 'Prompt', sans-serif;
 }
 #content{ 
     display: flex;

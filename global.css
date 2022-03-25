@@ -1,0 +1,10 @@
+:root{
+    --main-color:black;
+    --primary-color:black;
+    --secondary-color:black;
+
+}
+
+*{
+    font-size:16px;
+}
